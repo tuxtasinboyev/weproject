@@ -7,6 +7,8 @@ function readfile() {
 }
 function writefile(data) {
     const data2 = fs.writeFileSync(path.join(process.cwd(), '/data/user.json'), JSON.stringify(data, null, 2), 'utf8');
+
+
     return data2;
 }
 const GET = (req, res) => {
@@ -28,6 +30,17 @@ const GET = (req, res) => {
 }
 const GETID = (req, res) => {
     const data = readfile()
+
+
+    let { id } = req.params
+    let finduser = data.find(user => user.id === parseInt(id))
+    if (!finduser) {
+        res.send("bunday foydalanuvchi yuq")
+    }
+    else {
+        res.send(finduser)
+    }
+
 
 }
 const POST = (req, res) => {
@@ -83,6 +96,18 @@ const PUT = (req, res) => {
 };
 const DELETE = (req, res) => {
     let { id } = req.params
+    const data = readfile()
+    const deleteuser = data.filter(user => user.id !== parseInt(id))
+    if (!deleteuser) {
+        res.send("user is not defind")
+    }
+    writefile(deleteuser)
+
+    res.status(200).json({
+        message: "DELETE request received",
+        data: req.body
+    });
+
 
 }
 export default {

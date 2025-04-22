@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "firstName": "Ali",
+    "lastName": "Valiyev",
+    "course": 2,
+    "faculty": "Informatika"
+  },
+  {
+    "id": 2,
+    "firstName": "Javohiwr",
+    "lastName": "Mirzayevw",
+    "course": 24,
+    "faculty": "wdq"
+  },
+  {
+    "id": 3,
+    "firstName": "Bekzod",
+    "lastName": "Rasulov",
+    "course": 1,
+    "faculty": "Matematika"
+  },
+  {
+    "id": 4,
+    "firstName": "Shahnoza",
+    "lastName": "Turgunova",
+    "course": 4,
+    "faculty": "Fizika"
+  },
+  {
+    "id": 5,
+    "firstName": "Javohir",
+    "lastName": "Mirzayev",
+    "course": 2,
+    "faculty": "Tarix"
+  },
+  {
+    "id": 6,
+    "firstName": "Javohiwr",
+    "lastName": "Mirzayevw",
+    "course": 24,
+    "faculty": "wdq"
+  },
+  {
+    "id": 7,
+    "firstName": "Javohiwr",
+    "lastName": "Mirzayevw",
+    "course": 24,
+    "faculty": "wdq"
+  }
+]
